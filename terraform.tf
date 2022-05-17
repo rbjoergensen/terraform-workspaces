@@ -26,3 +26,13 @@ module "bucket" {
   source = "git::https://github.com/rbjoergensen/tf-s3-bucket.git?ref=v1"
   bucket_name = local.bucket_name
 }
+
+module "bucket_development" {
+  # If workspace is development create 1, else create 0
+  count = terraform.workspace == "development" ? 1 : 0
+  providers = {
+    aws = aws.frankfurt
+  }
+  source = "git::https://github.com/rbjoergensen/tf-s3-bucket.git?ref=v1"
+  bucket_name = local.bucket_name
+}

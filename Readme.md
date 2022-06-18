@@ -27,4 +27,4 @@ It will contain a folder for each environment with a subfolder for each terrafor
         - terraform-workspace-example/
             - terraform.state
 
-![Screenshot](.github/images/statefiles.png?raw=true)
+![Screenshot](https://raw.githubusercontent.com/rbjoergensen/terraform-workspaces/master/.github/images/statefiles.png?raw=true)

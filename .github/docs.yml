@@ -1,0 +1,6 @@
+navigatorName: Terraform Workspaces
+category: Terraform
+includeLink: true
+files:
+- file: Readme.md
+  prettyName: Readme

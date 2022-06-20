@@ -23,7 +23,7 @@ module "bucket" {
   providers = {
     aws = aws.frankfurt
   }
-  source = "git::https://github.com/rbjoergensen/tf-s3-bucket.git?ref=v1"
+  source = "git::https://github.com/rbjoergensen/tf-s3-bucket.git?ref=v1.0.15"
   bucket_name = local.bucket_name
 }
 
